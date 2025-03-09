@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #3d52a0;
+  --secondary-color: #7091e6;
+  --accent-color: #8697c4;
+  --accent-color-light: #adbbda;
+  --shade-color: #ede8f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1080px;
+  margin: auto;
+}
+
+.navbar {
+  /* background-color: var(--shade-color); */
+  /* height: 200px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  /* border: 1px solid red;  */
+  /* padding-inline: 60px; */
+  /* margin-inline: 20px; */
+  /* border: 1px solid red; */
+}
+
+.left img {
+  height: 70px;
+  width: 100px;
+}
+.mid {
+  display: flex;
+  gap: 20px;
+  color: var(--primary-color);
+}
+
+.mid div:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.right input {
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  height: 35px;
+  padding: 8px;
+}
+
+#search-btn {
+  height: 35px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  width: 70px;
+  border-radius: 10px;
+}
+
+#search-btn:hover {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.news-cards {
+  padding-block: 20px;
+  margin-top: 80px;
+  /* border: 2px solid green; */
+}
