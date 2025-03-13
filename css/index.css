@@ -44,6 +44,7 @@ nav {
 .left img {
   height: 70px;
   width: 100px;
+  cursor: pointer;
 }
 .mid {
   display: flex;
@@ -51,11 +52,16 @@ nav {
   color: var(--primary-color);
   font-size: larger;
   font-weight: 800;
+  transition: all 0.3s ease;
 }
 
 .mid div:hover {
   color: var(--shade-color);
   cursor: pointer;
+}
+
+.nav-item.active {
+  color: var(--accent-color);
 }
 
 .right input {

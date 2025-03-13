@@ -11,15 +11,18 @@
       <div class="navbar container">
         <div class="left">
           <img
+            onclick="reload()"
             src="./assets/News_Logo-removebg-preview.png"
             alt="logo img"
             srcset=""
           />
         </div>
         <div class="mid">
-          <div>Finance</div>
-          <div>Politics</div>
-          <div>Technology</div>
+          <div id="finance" class="nav-item" onclick="onNavItemClick('finance')">Finance</div>
+          <div id="politics" class="nav-item" onclick="onNavItemClick('politics')">Politics</div>
+          <div id="technology" class="nav-item" onclick="onNavItemClick('technology')">
+            Technology
+          </div>
         </div>
 
         <div class="right">
@@ -34,14 +37,13 @@
       </div>
     </nav>
 
-    <section class="news-cards container">
-      
-    </section>
+    <section class="news-cards container" id="cards-container"></section>
 
-    <template class="template-news-card">
+    <template id="template-news-card">
       <div class="card">
         <div class="card-header">
           <img
+            id="news-img"
             src="https://placehold.co/400x200/EEE/31343C?font=lato&text=Lato"
             alt="card-img"
           />
@@ -56,5 +58,8 @@
         </div>
       </div>
     </template>
+
+    <script src="./js/script.js"></script>
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
   </body>
 </html>
